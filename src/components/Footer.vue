@@ -21,15 +21,20 @@
 		</div>
 
 		<div class="redes-sociais">
-			<img src="./assets/Facebook.png" alt="" />
-			<img src="./assets/Twitter.png" alt="" />
-			<img src="./assets/Instagram.png" alt="" />
-			<img src="./assets/LinkedIn.png" alt="" />
+			<img :src="Facebook" alt="Facebook" />
+			<img :src="Twitter" alt="Twitter" />
+			<img :src="Instagram" alt="Instagram" />
+			<img :src="LinkedIn" alt="LinkedIn" />
 		</div>
 	</footer>
 </template>
 
-<script setup></script>
+<script setup>
+import Facebook from "../assets/Facebook.png";
+import Twitter from "../assets/Twitter.png";
+import Instagram from "../assets/Instagram.png";
+import LinkedIn from "../assets/LinkedIn.png";
+</script>
 
 <style lang="scss" scoped>
 .listas-footer {
@@ -100,6 +105,24 @@
 		.btn-submit {
 			width: 50%;
 			margin: 10px auto 0 auto;
+		}
+	}
+}
+
+.redes-sociais {
+	padding: 0% 2rem 2rem 2rem;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
+
+	img {
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+
+		&:hover {
+			transform: scale(1.2);
 		}
 	}
 }

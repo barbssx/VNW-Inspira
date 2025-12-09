@@ -33,7 +33,7 @@
 import Facebook from "../assets/Facebook.png";
 import Twitter from "../assets/Twitter.png";
 import Instagram from "../assets/Instagram.png";
-import LinkedIn from "../assets/LinkedIn.png";
+import LinkedIn from "../assets/Linkedin.png";
 </script>
 
 <style lang="scss" scoped>
